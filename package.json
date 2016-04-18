@@ -1,0 +1,14 @@
+{
+  "name": "constructors",
+  "version": "1.0.0",
+  "description": "Homework Week 11",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Jason Martocci",
+  "license": "ISC",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
