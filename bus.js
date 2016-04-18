@@ -1,16 +1,22 @@
-var Bus = function(studentsOnTheBus, driverName, color, gas, studentEntersBus, busChatter){
-  this.studentsOnTheBus = studentsOnTheBus;
-  this.driverName = driverName;
-  this.color = color;
-  this.gas = gas;
-  this.studentEntersBus = function(){
-        console.log("student enters bus");
-    };
-  this.busChatter = function(){
+var Bus = function() {
+
+  this.studentsOnTheBus = [];
+  this.driverName = "";
+  this.color = "";
+  this.gas = 0;
+
+  this.studentEntersBus = function() {
+    console.log("Student Enters Bus")
+  };
+
+  this.busChatter = function() {
     if((detentions < 10) && (gpa > 2)) {
-      console.log(catchPhrase);
+      console.log("Student catchphrase");
     } else {
-      console.log("student cannot have fun");
+      console.log("student still cannot have fun");
     }
-  }
-}
+  };
+};
+
+
+module.exports = Bus;

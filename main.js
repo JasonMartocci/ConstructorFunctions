@@ -1,3 +1,4 @@
+var Bus = require('./bus.js');
 var Student = require('./student.js');
 var prompt = require('prompt');
 
@@ -10,3 +11,17 @@ prompt.get(['name', 'gender', 'grade', 'gpa', 'detentions', 'sleepingInClass', '
   // console.log("this is me2" + JSON.parse(s));
   s.canStudentHaveFun();
 });
+
+
+
+// var promptBus = require('prompt');
+
+
+
+// promptBus.get(['studentEntersBus', 'studentsOnTheBus', 'driverName', 'color', 'gas'], function(err, result){
+
+//   var s = new Bus(result.studentEntersBus, result.studentsOnTheBus, result.driverName, result.color, result.gas);
+
+//   s.studentEntersBus();
+//   s.busChatter();
+// });

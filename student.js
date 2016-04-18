@@ -1,3 +1,5 @@
+var bus = require('./bus.js'); 
+
 var Student = function(name, gender, grade, gpa, detentions, sleepingInClass, catchPhrase){
   this.name = name;
   this.gender = gender;
@@ -14,3 +16,7 @@ var Student = function(name, gender, grade, gpa, detentions, sleepingInClass, ca
     }
   }
 }
+
+// this.busChatter(3, 4);
+
+module.exports = Student;
