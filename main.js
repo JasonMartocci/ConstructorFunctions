@@ -2,7 +2,18 @@ var Bus = require('./bus.js');
 var Student = require('./student.js');
 var prompt = require('prompt');
 
-var School = new Bus();
+var school = new Bus();
+
+// var studentOne = new Student();
+// var studentTwo = new Student();
+// var studentOne = new Student();
+// var studentOne = new Student();
+// var studentOne = new Student();
+// var studentOne = new Student();
+// var studentOne = new Student();
+// var studentOne = new Student();
+// var studentOne = new Student();
+// var studentOne = new Student();
 
 prompt.get(['name', 'gender', 'grade', 'gpa', 'detentions', 'sleepingInClass', 'catchPhrase'], function(err, result){
   // console.log(result);
@@ -11,9 +22,9 @@ prompt.get(['name', 'gender', 'grade', 'gpa', 'detentions', 'sleepingInClass', '
   // console.log("this is me" + JSON.stringify(s));
   // console.log("this is me2" + JSON.parse(s));
 
-  School.studentEntersBus(result.name, result.gender, result.grade, result.gpa, result.detentions, result.sleepingInClass, result.catchPhrase);
+  school.studentEntersBus(result.name, result.gender, result.grade, result.gpa, result.detentions, result.sleepingInClass, result.catchPhrase);
 
   s.canStudentHaveFun();
 
-  School.busChatter(result.gpa, result.detentions, result.catchPhrase);
+  school.busChatter(result.gpa, result.detentions, result.catchPhrase);
 });
