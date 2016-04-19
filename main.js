@@ -4,16 +4,18 @@ var prompt = require('prompt');
 
 var school = new Bus();
 
-// var studentOne = new Student();
-// var studentTwo = new Student();
-// var studentOne = new Student();
-// var studentOne = new Student();
-// var studentOne = new Student();
-// var studentOne = new Student();
-// var studentOne = new Student();
-// var studentOne = new Student();
-// var studentOne = new Student();
-// var studentOne = new Student();
+var studentOne = new Student('Janet', 'female', '12', '3.5', 'No', 'Yes', 'Hello World!', school.busChatter);
+var studentTwo = new Student('Steve', 'male', '12', '3.5', 'No', 'Yes', 'Hello World!');
+var studentThree = new Student('Kevin', 'male', '12', '3.5', 'No', 'Yes', 'Hello World!');
+var studentFour = new Student('Matthew', 'male', '12', '3.5', 'No', 'Yes', 'Hello World!');
+var studentFive = new Student('Kaitlyn', 'female', '12', '3.5', 'No', 'Yes', 'Hello World!');
+var studentSix = new Student('Mark', 'male', '12', '3.5', 'No', 'Yes', 'Hello World!');
+var studentSeven = new Student('Mary', 'female', '12', '3.5', 'No', 'Yes', 'Hello World!');
+var studentEight = new Student('Lora', 'female', '12', '3.5', 'No', 'Yes', 'Hello World!');
+var studentNine = new Student('Jeff', 'male', '12', '3.5', 'No', 'Yes', 'Hello World!');
+var studentTen = new Student('Chris', 'male', '12', '3.5', 'No', 'Yes', 'Hello World!');
+
+console.log(studentOne);
 
 prompt.get(['name', 'gender', 'grade', 'gpa', 'detentions', 'sleepingInClass', 'catchPhrase'], function(err, result){
   // console.log(result);
