@@ -1,8 +1,8 @@
 var Student = function(name, gender, grade, gpa, detentions, sleepingInClass, catchPhrase){
   this.name = name;
   this.gender = gender;
-  this.grade=grade;
-  this.gpa=gpa;
+  this.grade = grade;
+  this.gpa = gpa;
   this.detentions = detentions;
   this.sleepingInClass = sleepingInClass;
   this.catchPhrase = catchPhrase;
